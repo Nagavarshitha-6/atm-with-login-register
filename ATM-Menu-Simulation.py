@@ -12,7 +12,7 @@ while(True):
     print("2.Register")
     option=int(input("Enter your choice : "))
     if option == 1:
-        user_name=input("Enter username : ")
+        user_name=input("Enter username : ").lower()
         Epin=input("Enter Your pin : ")
         if user_name not in users and users[user-name]["pin"] != Epin and attempt!=0:
             attempt-=1
@@ -54,7 +54,7 @@ while(True):
                 else:
                     print("Invalid choice. Please select between 1 and 5.\n")
     elif option == 2:
-        new_user=input("choose a Username : ")
+        new_user=input("choose a Username : ").lower()
         if new_user in users:
             print("Username already exists.")
         else:
